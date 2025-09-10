@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prime Sequence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'scale(0.9)' },
+                '100%': { opacity: '1', transform: 'scale(1)' },
+              },
+              fadeOut: {
+                '0%': { opacity: '1', transform: 'scale(1)' },
+                '100%': { opacity: '0', transform: 'scale(0.9)' },
+              },
+              pulseGlow: {
+                '0%, 100%': {
+                  boxShadow: '0 0 15px rgba(59, 130, 246, 0.5), 0 0 5px rgba(59, 130, 246, 0.7)',
+                },
+                '50%': {
+                  boxShadow: '0 0 30px rgba(59, 130, 246, 0.7), 0 0 10px rgba(59, 130, 246, 1)',
+                },
+              },
+            },
+            animation: {
+              fadeIn: 'fadeIn 0.5s ease-in-out forwards',
+              fadeOut: 'fadeOut 0.5s ease-in-out forwards',
+              pulseGlow: 'pulseGlow 2s infinite ease-in-out',
+            },
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-900 text-slate-100">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
+   

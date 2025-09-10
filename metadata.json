@@ -1,0 +1,5 @@
+{
+  "name": "Prime Sequence",
+  "description": "A memory and recognition game where you must recall and type the prime numbers from a briefly displayed sequence. The game features progressive difficulty to challenge your working memory and prime number identification skills.",
+  "requestFramePermissions": []
+}
